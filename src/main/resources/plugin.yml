@@ -1,0 +1,4 @@
+name: PitSurvival
+version: '${project.version}'
+main: me.keegan.javapitsurvival.PitSurvival
+api-version: '1.20'
