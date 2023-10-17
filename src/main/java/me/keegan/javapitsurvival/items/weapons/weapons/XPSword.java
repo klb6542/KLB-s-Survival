@@ -2,6 +2,7 @@ package me.keegan.javapitsurvival.items.weapons.weapons;
 
 import me.keegan.javapitsurvival.PitSurvival;
 import me.keegan.javapitsurvival.builders.CheckItem;
+import me.keegan.javapitsurvival.items.weapons.bows.PenetratorBow;
 import net.kyori.adventure.text.Component;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
@@ -34,7 +35,8 @@ public class XPSword implements Listener {
         ItemMeta itemMeta = itemStack.getItemMeta();
 
         ArrayList<String> itemLore = new ArrayList<String>();
-        itemLore.add(ChatColor.GRAY + "Harvest " + ChatColor.AQUA + "+100%" + ChatColor.RESET + ChatColor.GRAY + " more xp");
+        itemLore.add("\n");
+        itemLore.add(ChatColor.GRAY + "Harvest " + ChatColor.AQUA + "+100%" + ChatColor.RESET + ChatColor.GRAY + " more exp");
 
         itemMeta.displayName(Component.text(ChatColor.AQUA + "" + ChatColor.MAGIC + "X " + ChatColor.RESET + ChatColor.AQUA  + "Soul Harvester" + ChatColor.MAGIC + " X"));
         itemMeta.setLore(itemLore);
